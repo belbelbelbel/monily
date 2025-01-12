@@ -4,6 +4,7 @@ import Works from "./Component/Howitworks/Features";
 import Features from "./Component/Howitworks/Features";
 import Workings from "./Component/Howitworks/Workings";
 import { Sponsors } from "./Component/Sponsors";
+import Security from "./Component/Howitworks/Security";
 export default function Home() {
   return (
     <div className="flex flex-col gap-32 md:gap-12 overflow-x-auto ">
@@ -13,6 +14,7 @@ export default function Home() {
       </div>
       {/* <Sponsors/> */}
       <Workings />
+      {/* <Security /> */}
     </div>
   );
 }

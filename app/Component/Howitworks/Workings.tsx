@@ -13,7 +13,7 @@ const ptSans1 = Varela({
 });
 const Workings = (props: Props) => {
     return (
-        <div className='w-screen h-[70vh]'>
+        <div className='w-screen h-[100vh]'>
             <div className='flex flex-col gap-20 w-[84%] mx-auto'>
                 <div className='flex md:flex-row flex-col justify-between w-full items-center'>
                     <div className='text-[#932EFA] text-center font-bold'>HOW IT WORKS</div>

@@ -29,7 +29,7 @@ export default function NavBar({ }: Props) {
 
     useEffect(() => {
       const handleScroll = () => {
-        setIsScrolled(window.scrollY > 5);
+        setIsScrolled(window.scrollY > 10);
       };
       window.addEventListener("scroll", handleScroll);
       return () => window.removeEventListener("scroll", handleScroll);
@@ -40,7 +40,7 @@ export default function NavBar({ }: Props) {
     };
 
     return (
-        <div className={`w-screen md:p-10`}>
+        <div className={`w-screen h-[70vh] md:p-10`}>
             <div className="flex md:shadow xl:h-[47vw] md:h-[56vw] h-[30rem]  relative bg md:rounded-[1rem] md:px-16 xl:px-20 py-8 xl:py-6 px-6 md:gap-10 gap-[75px] flex-col">
                 <div className={`relative flex items-center md:py-6 justify-center mb-0 w-[100%] `}>
                     <div className={`flex  fixed w-full md:w-[90%] px-8 md:px-12 md:rounded-[0.8rem]   items-center h-[5rem] justify-between ${isScrolled ? "bg-gray-100/80 z-50 transition-all backdrop-blur-md" : "bg-gray-100/80 md:bg-transparent z-50 md:z-0"}  `}>
