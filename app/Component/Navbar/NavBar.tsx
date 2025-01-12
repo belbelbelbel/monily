@@ -29,7 +29,7 @@ export default function NavBar({ }: Props) {
 
     useEffect(() => {
       const handleScroll = () => {
-        setIsScrolled(window.scrollY > 10);
+        setIsScrolled(window.scrollY > 5);
       };
       window.addEventListener("scroll", handleScroll);
       return () => window.removeEventListener("scroll", handleScroll);
@@ -40,10 +40,10 @@ export default function NavBar({ }: Props) {
     };
 
     return (
-        <div className={`w-screen  md:p-10`}>
-            <div className="flex md:shadow xl:h-[48vw] md:h-[56vw] h-[30rem]  relative bg md:rounded-[1rem] md:px-16 xl:px-20 py-8 xl:py-6 px-6 gap-10 flex-col">
+        <div className={`w-screen md:p-10`}>
+            <div className="flex md:shadow xl:h-[47vw] md:h-[56vw] h-[30rem]  relative bg md:rounded-[1rem] md:px-16 xl:px-20 py-8 xl:py-6 px-6 md:gap-10 gap-[75px] flex-col">
                 <div className={`relative flex items-center md:py-6 justify-center mb-0 w-[100%] `}>
-                    <div className={`flex  md:fixed md:w-[90%] w-full md:px-12 rounded-[0.8rem]   items-center h-[5rem] justify-between ${isScrolled ? "bg-gray-100/80 z-50 transition-all backdrop-blur-md" : "bg-transparent"}  `}>
+                    <div className={`flex  fixed w-full md:w-[90%] px-8 md:px-12 md:rounded-[0.8rem]   items-center h-[5rem] justify-between ${isScrolled ? "bg-gray-100/80 z-50 transition-all backdrop-blur-md" : "bg-gray-100/80 md:bg-transparent z-50 md:z-0"}  `}>
                         <div>
                             <Image
                                 src={Logo}
@@ -64,7 +64,7 @@ export default function NavBar({ }: Props) {
                         </div>
 
                         <div className='hidden md:block' >
-                            <Button size={'lg'} className='text-[1.06rem] font-bold bg-[#2E68FD]'>Contact Us</Button>
+                            <Button size={'lg'} className='text-[1.06rem] shadow  font-bold bg-[#2E68FD]'>Contact Us</Button>
                         </div>
                         <div className='md:hidden'>
                             <Hamburger />
@@ -87,14 +87,14 @@ export default function NavBar({ }: Props) {
                                 </div>
                             </div>
                             <div className='md:flex hidden flex gap-4'>
-                                <div className='bg-black cursor-pointer text-white rounded-[8px] md:px-3  md:py-[5px] xl:py-[6px] xl:px-7  gap-1 flex items-center'>
-                                    <div><FaApple color='white' size={26} className='' /></div>
+                                <div className='bg-black cursor-pointer text-white rounded-[8px] md:px-3 xl:w-[11rem] md:w-[9rem] shadow  md:py-[5px] xl:py-[6px] xl:px-7  gap-1 flex items-center'>
+                                    <div><FaApple color='white' size={28} className='' /></div>
                                     <div className='flex flex-col md:leading-[0.7rem] xl:leading-[0.8rem]'>
                                         <div className='xl:text-[0.6rem] md:text-[0.5rem] text-white text-opacity-[0.8]'>Download on the</div>
                                         <div className={`xl:text-[1rem] md:text-[0.9rem] tracking-[1.1px] font-medium flex gap-[0.8px] ${ptSans1}`}> <div>App</div> <div>Store</div></div>
                                     </div>
                                 </div>
-                                <div className='bg-black cursor-pointer text-white rounded-[8px] md:px-3  md:py-[5px] xl:py-[6px] xl:px-6  gap-1 flex items-center'>
+                                <div className='bg-black cursor-pointer text-white rounded-[8px] md:px-3  xl:w-[11rem] md:w-[9rem]  shadow  md:py-[5px] xl:py-[6px] xl:px-6  gap-1 flex items-center'>
                                     <div><FaGooglePlay color='white' size={25} className='' /></div>
                                     <div className='flex flex-col md:leading-[0.7rem] xl:leading-[0.8rem]'>
                                         <div className='xl:text-[0.6rem] md:text-[0.5rem] text-white text-opacity-[0.8]'>Download on the</div>
@@ -114,7 +114,7 @@ export default function NavBar({ }: Props) {
                                 </div>
                             </div>
                         </div>
-                        <div>
+                        <div className='relative '>
                             <Image
                                 src={heroimg2}
                                 alt="heroimg1"

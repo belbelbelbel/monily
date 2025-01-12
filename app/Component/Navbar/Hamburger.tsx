@@ -78,10 +78,6 @@ const HamburgerMenu = () => {
                                 </a>
                             </motion.li>
                         ))}
-                        <div className="mt-6 flex flex-col justify-center gap-6">
-                            <Link href="Auth/auths" className="text-[1.1rem]">Account</Link>
-                            <Link href="/cart" className="text-[1.1rem]">Cart</Link>
-                        </div>
                     </motion.div>
                 )}
             </AnimatePresence>

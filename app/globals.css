@@ -95,5 +95,35 @@ body {
   rgba(253, 253, 255, 1), 
   rgba(249, 245, 253, 1), 
   rgb(238, 231, 246));
- 
 }
+.bg-features {
+  /* background: linear-gradient(90deg, #f5f5f5, #d9d9d9, #bfbfbf, #a6a6a6); */
+  background-color: #fdfcfc;
+
+}
+
+/* Define keyframes for seamless scrolling */
+@keyframes seamless-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Scrolling container */
+.scroll-container {
+  display: flex;
+  animation: seamless-scroll 10s linear infinite;
+  /* Adjust speed (10s) as needed */
+  width: calc(200%); /* Ensure it accommodates two sets of images */
+}
+
+/* Images in the scroll */
+.scroll-image {
+  flex-shrink: 0;
+  width: 100px; /* Set consistent width */
+  height: auto;
+}
+
