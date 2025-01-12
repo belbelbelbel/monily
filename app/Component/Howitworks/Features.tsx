@@ -57,7 +57,7 @@ const Features = (props: Props) => {
             {FeaturesArray.map((item, index) => (
               <div
                 key={index}
-                className="flex flex-col   shadow md:w-[38%] h-[13rem] p-2 justify-center rounded-[10px] m-2  items-center gap-4"
+                className="flex flex-col   shadow md:w-[38%] h-[13rem] w-[90%]  p-2 justify-center rounded-[10px] m-2  items-center gap-4"
                 style={{ backgroundColor: `#${item.bgColor}` }}
               >
                 <div>{item.icon}</div>

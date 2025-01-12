@@ -7,12 +7,11 @@ import { Sponsors } from "./Component/Sponsors";
 import Security from "./Component/Howitworks/Security";
 export default function Home() {
   return (
-    <div className="flex flex-col gap-32 md:gap-12 overflow-x-auto ">
-      <div className="flex flex-col gap-52 md:gap-[15rem]">
+    <div className="flex flex-col gap-32 md:gap-12 h-screen overflow-x-hidden  ">
+      <div className="flex flex-col gap-20 md:gap-[15rem]">
         <NavBar />
         <Features />
       </div>
-      {/* <Sponsors/> */}
       <Workings />
       {/* <Security /> */}
     </div>
