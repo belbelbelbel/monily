@@ -8,7 +8,7 @@ import Security from "./Component/Howitworks/Security";
 export default function Home() {
   return (
     <div className="flex flex-col gap-32 md:gap-12 overflow-x-auto ">
-      <div className="flex flex-col gap-52 md:gap-10">
+      <div className="flex flex-col gap-52 md:gap-[15rem]">
         <NavBar />
         <Features />
       </div>
