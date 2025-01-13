@@ -45,8 +45,8 @@ export default function NavBar({ }: Props) {
     };
 
     return (
-        <div className="w-screen md:h-[70vh] md:p-10">
-            <div className="flex md:shadow xl:h-[47vw] md:h-[56vw] h-[30rem] relative bg md:rounded-[1rem] md:px-16 xl:px-20 py-8 xl:py-6 px-6 md:gap-10 gap-[75px] flex-col">
+        <div className="w-screen md:p-10">
+            <div className="flex md:shadow xl:h-[47vw] md:h-[56vw] h-[35rem] relative bg md:rounded-[1rem] md:px-16 xl:px-20 py-8 xl:py-6 px-6 md:gap-10 gap-[75px] flex-col">
                 {/* Navbar */}
                 <div className={`relative flex items-center md:py-6 justify-center mb-0 w-[100%]`}>
                     <div
@@ -82,7 +82,7 @@ export default function NavBar({ }: Props) {
                         <div className="hidden md:block">
                             <Button
                                 size="lg"
-                                className="text-[1.06rem] shadow font-bold bg-[#2E68FD]"
+                                className="text-[1.06rem] shadow font-bold bg-[#006270]"
                             >
                                 Contact Us
                             </Button>
