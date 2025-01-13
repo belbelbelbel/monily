@@ -48,7 +48,7 @@ const FeaturesArray = [
 
 const Features = (props: Props) => {
   return (
-    <div className='xl:h-[65vh] md:h-[38vh] justify-center xl:flex flex-col  w-screen bg-features'>
+    <div className='xl:h-[65vh] md:h-[38vh]  justify-center xl:flex flex-col  w-screen bg-features'>
       <div className={`w-[84%] mx-auto py-8 ${ptSans1.className}`}>
         <div className='flex flex-col gap-6'>
           {/* <div className={`text-center text-[#932EFA] font-bold tracking-[1px] ${ptSans2.className}`}>FEATURES</div> */}
