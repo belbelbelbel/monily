@@ -71,7 +71,7 @@ export default function NavBar({ }: Props) {
                             {NavItems.map((item, index) => (
                                 <div
                                     key={index}
-                                    className={`xl:p-2 cursor-pointer xl:text-[1.1rem] font-medium ${handleActiveLocation(item)}`}
+                                    className={`xl:p-2 cursor-pointer lg:text-[1.35rem] xl:text-[1.1rem] font-medium ${handleActiveLocation(item)}`}
                                 >
                                     {item}
                                 </div>
@@ -100,24 +100,24 @@ export default function NavBar({ }: Props) {
                     <div className="flex items-center md:flex-row flex-col md:gap-0 gap-4 justify-between">
                         <div className="relative flex flex-col gap-2 md:gap-4">
                             <div className="flex md:text-left text-center flex-col gap-2 xl:gap-3">
-                                <div className="text-[#932EFA] font-bold">Easy Payment</div>
+                                {/* <div className="text-[#932EFA] font-bold">Easy Payment</div> */}
                                 <div
-                                    className={`flex tracking-[0.1px] xl:w-[91%] font-bold text-[2.05rem] xl:text-[3.1rem] md:text-[36.5px] leading-tight ${ptSans1.className}`}
+                                    className={`flex tracking-[0.1px] xl:w-[91%] font-bold text-[2.05rem] xl:text-[3.1rem] md:text-[25.5px]  lg:text-[38.5px] leading-tight ${ptSans1.className}`}
                                 >
                                     Pay fast and smarter from anywhere
                                 </div>
-                                <div className="md:text-[0.7rem] text-[0.95rem] xl:text-[1.1rem]">
+                                <div className="md:text-[0.7rem] lg:text-[1.1rem] text-[0.95rem] xl:text-[1.1rem]">
                                     Experience the future of payments: fast, secure, and tailored for the next generation's convenience and trust.
                                 </div>
                             </div>
-                            <div className="md:flex hidden flex gap-4">
-                                <div className="bg-black cursor-pointer text-white rounded-[8px] md:px-3 xl:w-[11rem] md:w-[9rem] shadow md:py-[5px] xl:py-[6px] xl:px-7 gap-1 flex items-center">
+                            <div className="  justify-center md:justify-start flex gap-4">
+                                <div className="bg-black cursor-pointer text-white  justify-center md:justify-start rounded-[8px] w-[10rem] md:px-3 xl:w-[11rem] md:w-[8rem] shadow md:py-[5px]  xl:py-[6px] xl:px-7 gap-1 flex items-center">
                                     <div>
-                                        <FaApple color="white" size={28} />
+                                        <FaApple color="white" size={25} />
                                     </div>
-                                    <div className="flex flex-col md:leading-[0.7rem] xl:leading-[0.8rem]">
-                                        <div className="xl:text-[0.6rem] md:text-[0.5rem] text-white text-opacity-[0.8]">
-                                            Download on the
+                                    <div className="flex items-center flex-col md:leading-[0.8rem] leading-[0.9rem]  xl:leading-[0.8rem]">
+                                        <div className="xl:text-[0.6rem] md:text-[0.6rem] lg:text-[0.7rem] text-[0.7rem]  text-white text-opacity-[1]">
+                                            Get it on
                                         </div>
                                         <div className={`xl:text-[1rem] md:text-[0.9rem] tracking-[1.1px] font-medium flex gap-[0.8px] ${ptSans1}`}>
                                             <div>App</div>
@@ -125,13 +125,13 @@ export default function NavBar({ }: Props) {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="bg-black cursor-pointer text-white rounded-[8px] md:px-3 xl:w-[11rem] md:w-[9rem] shadow md:py-[5px] xl:py-[6px] xl:px-6 gap-1 flex items-center">
+                                <div className="bg-black cursor-pointer text-white justify-center md:justify-start rounded-[8px] w-[10rem] h-[2.4rem]  md:px-3 xl:w-[11rem] md:w-[8.5rem] lg:w-[9rem] shadow lg:py-[5px] md:py-[7px] xl:py-[6px] xl:px-6 gap-1 flex items-center">
                                     <div>
-                                        <FaGooglePlay color="white" size={25} />
+                                        <FaGooglePlay color="white" size={20} />
                                     </div>
-                                    <div className="flex flex-col md:leading-[0.7rem] xl:leading-[0.8rem]">
-                                        <div className="xl:text-[0.6rem] md:text-[0.5rem] text-white text-opacity-[0.8]">
-                                            Download on the
+                                    <div className="flex flex-col items-center md:leading-[0.8rem] leading-[0.9rem] xl:leading-[0.8rem]">
+                                        <div className="xl:text-[0.6rem] md:text-[0.6rem] lg:text-[0.7rem] text-[0.7rem]  text-white text-opacity-[1]">
+                                            Download on
                                         </div>
                                         <div className={`xl:text-[1rem] md:text-[0.9rem] tracking-[1.1px] font-medium flex gap-[0.8px] ${ptSans1}`}>
                                             <div>Google</div>
@@ -140,8 +140,8 @@ export default function NavBar({ }: Props) {
                                     </div>
                                 </div>
                             </div>
-                            <div className={`flex items-center gap-3 md:text-[1rem] md:w-auto justify-center md:justify-start text-[0.8rem] text-center xl:text-left text-gray-600 ${ptSans1.className}`}>
-                                <div className="flex items-center gap-1">
+                            <div className={`flex hidden items-center gap-3 md:text-[0.8rem] lg:text-[1rem] md:w-auto justify-center md:justify-start text-[0.8rem] text-center xl:text-left text-gray-600 ${ptSans1.className}`}>
+                                <div className="flex items-center gap-0">
                                     <GrStatusGood />
                                     <div>No Card required</div>
                                 </div>
@@ -158,7 +158,7 @@ export default function NavBar({ }: Props) {
                                 priority={true}
                                 width={910}
                                 height={400}
-                                className="xl:w-[46rem] md:w-[45rem]"
+                                className="xl:w-[46rem] lg:w-[55rem] md:w-[43.5rem]"
                             />
                         </div>
                     </div>

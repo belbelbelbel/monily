@@ -23,8 +23,8 @@ const ptSans2 = Urbanist({
 
 const Features = (props: Props) => {
   return (
-    <div className='xl:h-[65vh] md:h-[38vh]  justify-center xl:flex flex-col  w-screen bg-features'>
-      <div className={`w-[84%] mx-auto py-8 ${ptSans1.className}`}>
+    <div className='xl:h-[65vh] md:h-[38vh]  justify-center md:flex flex-col  w-screen bg-features'>
+      <div className={`lg:w-[87%] w-[87%] md:w-[90%] mx-auto py-8 ${ptSans1.className}`}>
         <div className='flex flex-col gap-6'>
           {/* <div className={`text-center text-[#932EFA] font-bold tracking-[1px] ${ptSans2.className}`}>FEATURES</div> */}
           <div className={`font-bold md:w-[60%] sm:w-[40%] xl:w-[40%]   mx-auto text-center text-[1.4rem] md:text-[2.05rem] text-center font-bold tracking-[1px]  ${ptSans1.className}`}>Why choose Monily for effortless payment</div>
@@ -37,7 +37,7 @@ const Features = (props: Props) => {
             }, index) => ( 
               <div
                 key={index}
-                className="flex flex-col   shadow md:w-[38%] h-[13rem] w-[90%]  p-2 justify-center rounded-[10px] m-2  items-center gap-4"
+                className="flex flex-col   shadow md:w-[50%]  lg:w-[60%]  xl:w-[38%] h-[13rem] xl:h-[13rem] lg:h-[15rem] w-[90%]  p-2 justify-center rounded-[10px] m-2  items-center gap-4"
                 style={{ backgroundColor: `#${item.bgColor}` }}
               >
                 <div><item.icon size={30}/></div>

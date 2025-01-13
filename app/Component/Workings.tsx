@@ -17,7 +17,7 @@ const Workings = (props: Props) => {
             <div className='flex flex-col gap-20 w-[84%] mx-auto'>
                 <div className='flex md:flex-row flex-col justify-between w-full items-center'>
                     <div className='text-[#932EFA] text-center font-bold'>HOW IT WORKS</div>
-                    <div className={` ${ptSans1.className} md:w-[40rem] md:text-right text-center text-[1.5rem] md:text-[2.5rem]`}>Make payments, transfers, and more in 3 simple steps</div>
+                    <div className={` ${ptSans1.className} md:w-[40rem] md:text-right text-center text-[1.5rem] md:text-[2.2rem] lg:text-[2.5rem]`}>Make payments, transfers, and more in 3 simple steps</div>
                 </div>
                 <div className='flex flex-col gap-10'>
                     <div className='flex flex-col md:flex-row justify-between items-center w-[78%] mx-auto'>
