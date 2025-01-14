@@ -50,11 +50,10 @@ export default function NavBar({ }: Props) {
                 {/* Navbar */}
                 <div className={`relative flex items-center md:py-6 justify-center mb-0 w-[100%]`}>
                     <div
-                        className={`flex fixed w-full md:w-[90%] px-8 md:px-12 md:rounded-[0.8rem] items-center h-[6.1rem] justify-between ${
-                            isScrolled
-                                ? "bg-white shadow-md text-gray-800 z-50 transition-all backdrop-blur-md"
+                        className={`flex fixed w-full md:w-[90%] px-8 md:px-12 md:rounded-[0.8rem] items-center h-[6.1rem] justify-between ${isScrolled
+                                ? "bg-gray-200/50 shadow-md text-gray-800 z-50 transition-all backdrop-blur-md"
                                 : "bg-gray-200 md:bg-transparent text-gray-700 z-50"
-                        }`}
+                            }`}
                     >
                         <div>
                             <Image
@@ -67,11 +66,11 @@ export default function NavBar({ }: Props) {
                         </div>
 
                         {/* Nav Items */}
-                        <div className={`flex items-center font-bold gap-4 md:flex hidden ${ptSans1.className}`}>
+                        <div className={`flex items-center  font-bold gap-4 md:flex hidden ${ptSans1.className}`}>
                             {NavItems.map((item, index) => (
                                 <div
                                     key={index}
-                                    className={`xl:p-2 cursor-pointer lg:text-[1.35rem] xl:text-[1.1rem] font-medium ${handleActiveLocation(item)}`}
+                                    className={`xl:p-2 cursor-pointer lg:text-[1.35rem] 2xl:text-[1.2rem] xl:text-[1.1rem] font-medium ${handleActiveLocation(item)}`}
                                 >
                                     {item}
                                 </div>
@@ -99,25 +98,27 @@ export default function NavBar({ }: Props) {
                 <div className="flex flex-col ">
                     <div className="flex items-center md:flex-row flex-col md:gap-0 gap-4 justify-between">
                         <div className="relative flex flex-col gap-2 md:gap-4">
-                            <div className="flex md:text-left text-center flex-col gap-2 xl:gap-3">
+                            <div className="flex md:text-left text-center flex-col gap-3 xl:gap-3">
                                 {/* <div className="text-[#932EFA] font-bold">Easy Payment</div> */}
                                 <div
-                                    className={`flex tracking-[0.1px] xl:w-[91%] font-bold text-[2.05rem] xl:text-[3.1rem] md:text-[25.5px]  lg:text-[38.5px] leading-tight ${ptSans1.className}`}
+                                    className={`flex tracking-[0.1px] xl:w-[91%] font-bold text-[1.9rem] xl:text-[3.1rem] md:text-[25.5px]  lg:text-[38.5px] leading-tight ${ptSans1.className}`}
                                 >
-                                    Pay fast and smarter from anywhere
+                                    <div>
+                                        You Should Spend Your Crypto Like Cash
+                                    </div>
                                 </div>
                                 <div className="md:text-[0.7rem] lg:text-[1.1rem] text-[0.95rem] xl:text-[1.1rem]">
                                     Experience the future of payments: fast, secure, and tailored for the next generation's convenience and trust.
                                 </div>
                             </div>
-                            <div className="  justify-center md:justify-start flex gap-4">
+                            <div className=" hidden md:flex justify-center md:justify-start flex gap-4">
                                 <div className="bg-black cursor-pointer text-white  justify-center md:justify-start rounded-[8px] w-[10rem] md:px-3 xl:w-[11rem] md:w-[8rem] shadow md:py-[5px]  xl:py-[6px] xl:px-7 gap-1 flex items-center">
                                     <div>
                                         <FaApple color="white" size={25} />
                                     </div>
                                     <div className="flex items-center flex-col md:leading-[0.8rem] leading-[0.9rem]  xl:leading-[0.8rem]">
                                         <div className="xl:text-[0.6rem] md:text-[0.6rem] lg:text-[0.7rem] text-[0.7rem]  text-white text-opacity-[1]">
-                                            Get it on
+                                            Download on
                                         </div>
                                         <div className={`xl:text-[1rem] md:text-[0.9rem] tracking-[1.1px] font-medium flex gap-[0.8px] ${ptSans1}`}>
                                             <div>App</div>
@@ -140,7 +141,7 @@ export default function NavBar({ }: Props) {
                                     </div>
                                 </div>
                             </div>
-                            <div className={`flex hidden items-center gap-3 md:text-[0.8rem] lg:text-[1rem] md:w-auto justify-center md:justify-start text-[0.8rem] text-center xl:text-left text-gray-600 ${ptSans1.className}`}>
+                            <div className={`flex   items-center  gap-3 md:text-[0.8rem] lg:text-[1rem] md:w-auto justify-center md:justify-start text-[0.8rem] text-center xl:text-left text-gray-600 ${ptSans1.className}`}>
                                 <div className="flex items-center gap-0">
                                     <GrStatusGood />
                                     <div>No Card required</div>

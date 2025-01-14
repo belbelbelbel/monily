@@ -8,8 +8,8 @@ import Security from "./Component/Security";
 import React from "react";
 export default function Home() {
   return (
-    <div className="flex flex-col md:gap-8 gap-8  lg:gap-24 2xl:gap-2 xl:gap-12 h-screen overflow-x-hidden  ">
-      <div className="flex flex-col gap-32 lg:gap-20 md:gap-[0rem] xl:gap-0">
+    <div className="flex flex-col md:gap-8 gap-8   lg:gap-24 2xl:gap-12 xl:gap-12 h-screen ">
+      <div className="flex flex-col gap-20 lg:gap-20 md:gap-[0rem] xl:gap-0 2xl:gap-10">
         <NavBar />
         <Features />
       </div>

@@ -23,7 +23,7 @@ const ptSans2 = Urbanist({
 
 const Features = (props: Props) => {
   return (
-    <div className='xl:h-[65vh] md:h-[38vh]  justify-center md:flex flex-col  w-screen bg-features'>
+    <div className='xl:h-[65vh] 2xl:h-[60vh] md:h-[38vh]   justify-center md:flex flex-col  w-screen bg-features'>
       <div className={`lg:w-[87%] w-[87%] md:w-[90%] mx-auto py-8 ${ptSans1.className}`}>
         <div className='flex flex-col gap-6'>
           {/* <div className={`text-center text-[#932EFA] font-bold tracking-[1px] ${ptSans2.className}`}>FEATURES</div> */}
@@ -37,13 +37,13 @@ const Features = (props: Props) => {
             }, index) => ( 
               <div
                 key={index}
-                className="flex flex-col   shadow md:w-[50%]  lg:w-[60%]  xl:w-[38%] h-[13rem] xl:h-[13rem] lg:h-[15rem] w-[90%]  p-2 justify-center rounded-[10px] m-2  items-center gap-4"
+                className="flex flex-col   shadow md:w-[50%]  lg:w-[60%]  2xl:w-[41%] xl:w-[38%] h-[13rem] xl:h-[13rem] lg:h-[15rem] w-[90%]  p-2 justify-center rounded-[10px] m-2  items-center gap-4"
                 style={{ backgroundColor: `#${item.bgColor}` }}
               >
                 <div><item.icon size={30}/></div>
                 <div className="flex text-center flex-col gap-2">
-                  <div className="font-bold text-[1.1rem]  text-center">{item.title}</div>
-                  <div className='font-medium text-[0.92rem]'>{item.description}</div>
+                  <div className="font-bold text-[1.1rem] 2xl:text-[1.3rem]  text-center">{item.title}</div>
+                  <div className='font-medium  2xl:text-[1.2rem]   text-[0.92rem]'>{item.description}</div>
                 </div>
               </div>
 

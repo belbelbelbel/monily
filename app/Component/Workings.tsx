@@ -2,7 +2,7 @@ import { Button } from '@/components/ui/button'
 import { Varela } from 'next/font/google';
 import downloadimg from '../../public/downloadimg.avif'
 import linkaccimg from "../../public/linkaccimg.png"
-import paymentimg from "../../public/ paymentimg.webp"
+import paymentimg from "../../public/paymentimg.jpeg"
 import Image from 'next/image';
 import React from 'react'
 
@@ -16,7 +16,7 @@ const Workings = (props: Props) => {
         <div className='w-screen '>
             <div className='flex flex-col gap-20 w-[84%] mx-auto'>
                 <div className='flex md:flex-row flex-col justify-between w-full items-center'>
-                    <div className='text-[#932EFA] text-center font-bold'>HOW IT WORKS</div>
+                    <div className='text-[#006270] text-center font-bold'>HOW IT WORKS</div>
                     <div className={` ${ptSans1.className} md:w-[40rem] md:text-right text-center text-[1.5rem] md:text-[2.2rem] lg:text-[2.5rem]`}>Make payments, transfers, and more in 3 simple steps</div>
                 </div>
                 <div className='flex flex-col gap-10'>
@@ -48,10 +48,11 @@ const Workings = (props: Props) => {
                     </div>
                     <hr />
                     <div className='flex flex-col md:flex-row f md:flex-row justify-between items-center w-[78%] mx-auto'>
-                        <div className='flex'>
+                        <div className='flex gap-6'>
                             <div className={`text-[2.5rem] text-gray-400 font-bold ${ptSans1.className}`}>03</div>
                             <div className=''>
-                                <Image src={paymentimg} width={300} priority={true} height={50} alt='downloadingpic' />
+                                <Image src={paymentimg} width={150} priority={true} height={70} alt='downloadingpic' />
+                                <div className='absolute bg-black  radius-full'></div>
                             </div>
                         </div>
                         <div className={`  p-6 ${ptSans1.className} `}>
